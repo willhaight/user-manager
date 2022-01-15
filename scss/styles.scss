@@ -1,0 +1,26 @@
+body {
+    background-color:black;
+    color:white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
+    #form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: azure;
+        width:40%;
+        padding-bottom: 1em;
+        padding-top: 1em;
+        color:black
+    }
+    #mngUsr{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: azure;
+        color:black;
+        padding-bottom: 1em;
+        padding-top: 1em;
+    }
