@@ -34,14 +34,25 @@ submit.onclick = () => {
 function addUser() {
     let latest
     for (let i = 0; i < accountArr.length; i++) { latest = i }
-    userManager.innerHTML += `<p>Email: ${accountArr[latest].email}</p>` +
-        `<p>Age: ${accountArr[latest].age}</p>`
+    userManager.innerHTML += `<div><p>Email: <span class='email' contenteditable="true">${accountArr[latest].email}</span></p>` +
+        `<p>Age: <span class='age' contenteditable="true">${accountArr[latest].age}</span></p></div>`
 
 }
 function loadUsers() {
     console.log('ran')
     for (let i = 0; i < accountArr.length; i++) {
-        userManager.innerHTML += `<p>Email: ${accountArr[i].email}</p>` +
-            `<p>Age: ${accountArr[i].age}</p>`
+        userManager.innerHTML += `<div><p>Email: <span class='email' contenteditable="true">${accountArr[i].email}</span></p>` +
+            `<p>Age: <span class='age' contenteditable="true">${accountArr[i].age}</span></p></div>`
     }
+}
+let updateBtn = document.getElementById('update')
+let emailDoc = document.getElementsByClassName('email')
+let ageDoc = document.getElementsByClassName('age')
+updateBtn.onclick = function () {
+    for (let i = 0; i < accountArr.length; i++) {
+        accountArr[i].email = emailDoc[i].innerText
+        accountArr[i].age = ageDoc[i].innerText
+    }
+    localStorage.setItem('array', JSON.stringify(accountArr))
+
 }
