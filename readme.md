@@ -2,7 +2,7 @@ Instructions
 
 download content
 
-npm i mongoose && npm i exporess
+npm i mongoose && npm i express
 
 node app.js
 
