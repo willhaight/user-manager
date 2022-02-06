@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        label {
+            margin-top: 1em;
+        }
+
+        input {
+            margin-top: .5em;
+            width: 10em;
+        }
+
+        button {
+            border-radius: 5em;
+            background-color: grey;
+            margin-top: 1em;
+            width: 10em;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: azure;
+            border: 2px solid white;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        .container {
+            background-color: rgb(53, 53, 53);
+            padding: 2em;
+            margin-top: 2em;
+            border-radius: 3em;
+        }
+    </style>
+    <title>Account Manager</title>
+</head>
+
+<body>
+    <div class="nav">
+
+        <a href="/accounts1">Accounts Ascending</a>
+        <a href="/accounts-1">Accounts Descending</a>
+        <a href="/search">Search Accounts</a>
+
+    </div>
+    <h1>Account manager</h1>
+
+    <div class="container">
+        <h2>Create Account:</h2>
+        <form action="/create-account" method="post">
+            <label>First Name</label>
+            <input type="text" name="firstName" placeholder="First Name" />
+            <label>Last Name</label>
+            <input type="text" name="lastName" placeholder="Last Name" />
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Email" />
+            <label>Age</label>
+            <input type="number" name="age" placeholder="Age" />
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Edit Account:</h2>
+        <form action="/edit" method="post">
+            <div>
+                <label>First name of account</label>
+                <input name="firstName" placeholder="First Name" />
+            </div>
+            <h2>New Attributes:</h2>
+            <label>Last Name</label>
+            <input type="text" name="lastName" placeholder="Last Name" />
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Email" />
+            <label>Age</label>
+            <input type="number" name="age" placeholder="Age" />
+            <button>Submit</button>
+        </form>
+        <h2>Delete Account:</h2>
+        <form action="/delete" method="post">
+            <label>First Name</label>
+            <input type="text" name="firstName" placeholder="First Name" />
+            <label>Last Name</label>
+            <input type="text" name="lastName" placeholder="Last Name" />
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
