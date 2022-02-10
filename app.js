@@ -18,13 +18,13 @@ const mongooseConnection = mongoose.connection;
 
 //postgres data base
 
-const Client = require('pg').Client
-const client = new Client({
-    user: "postgres",
-    password: "Test123",
-    port: 5432,
-    database: "users"
-})
+// const Client = require('pg').Client
+// const client = new Client({
+//     user: "postgres",
+//     password: "Test123",
+//     port: 5432,
+//     database: "users"
+// })
 
 client.connect()
     .then(() => console.log('we are connected'))

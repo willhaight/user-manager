@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/willhaight/user-management-mongoDB.git"
   },
-  "author": "Will",
+  "author": "William",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/willhaight/user-management-mongoDB/issues"
