@@ -4,13 +4,14 @@
   "description": "1. Clone or Download Repo",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JaxonKnight28/user-management-mongoDB.git"
   },
-  "author": "",
+  "author": "Will",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JaxonKnight28/user-management-mongoDB/issues"
@@ -21,6 +22,7 @@
     "express": "^4.17.2",
     "mongoose": "^6.2.0",
     "path": "^0.12.7",
+    "pg": "^8.7.3",
     "swig": "^1.4.2"
   },
   "keywords": []
