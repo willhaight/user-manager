@@ -14,9 +14,9 @@
   "author": "Will",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JaxonKnight28/user-management-mongoDB/issues"
+    "url": "https://github.com/willhaight/user-management-mongoDB/issues"
   },
-  "homepage": "https://github.com/JaxonKnight28/user-management-mongoDB#readme",
+  "homepage": "https://github.com/willhaight/user-management-mongoDB#readme",
   "dependencies": {
     "consolidate": "^0.16.0",
     "express": "^4.17.2",
