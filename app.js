@@ -26,12 +26,12 @@ const mongooseConnection = mongoose.connection;
 //     database: "users"
 // })
 
-client.connect()
-    .then(() => console.log('we are connected'))
-    .then(() => client.query("select * from employees"))
-    .then(results => console.table(results.rows))
-    .catch(err => console.log(err))
-    .finally(() => client.end())
+// client.connect()
+//     .then(() => console.log('we are connected'))
+//     .then(() => client.query("select * from employees"))
+//     .then(results => console.table(results.rows))
+//     .catch(err => console.log(err))
+//     .finally(() => client.end())
 
 
 mongooseConnection.on('error', console.error.bind(console, 'Connection error:'));
